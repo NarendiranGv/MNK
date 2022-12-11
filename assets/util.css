@@ -1,0 +1,228 @@
+.wrap {
+    background: url(../assets/img/contactbg.jpg) no-repeat center / cover;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 30px 10%;
+}
+
+.wrap::before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to left, rgba(32, 41, 119, 0.837), rgba(55, 46, 149, 0.87), rgba(83, 49, 177, 0.832), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contact h2 {
+    font-weight: 500;
+    padding: 2% 0;
+}
+
+.contactform {
+    /* padding: 130px 10%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    margin: 5%;
+    padding-bottom: 3%;
+    margin-bottom: 0;
+
+}
+
+.contactform label {
+    padding: 2%;
+}
+
+.contactform input {
+    padding: 2%;
+    border: #25d366;
+    border-style: none;
+    border-radius: 10px;
+
+
+}
+
+.contactform textarea {
+    padding: 2%;
+    border: #25d366;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.contact #button {
+    margin: 10% 25%;
+}
+
+input[type=submit] {
+    background: linear-gradient(to right, rgba(32, 41, 119, 0.837), rgba(55, 46, 149, 0.87), rgba(83, 49, 177, 0.832), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    color: white;
+    width: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px 2px rgba(255, 254, 254, 0.737);
+    transition: all ease 0.3s;
+}
+
+.wrap1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+
+.contactus {
+
+    width: 400px;
+    height: 400px;
+    margin: 0% 10%;
+    margin-top: 3%;
+
+}
+
+.icons i {
+    font-size: 50px;
+}
+
+.icons ul li {
+    display: inline-block;
+    padding: 0px 40px;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.rightside {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10%;
+}
+
+.fb:hover {
+    cursor: pointer;
+    color: #1877f2;
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+
+.insta:hover {
+    cursor: pointer;
+    color: #c32aa3;
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+
+.wp:hover {
+    cursor: pointer;
+    color: #25d366;
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .wrap1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .icons ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* margin-left: 2ch; */
+    }
+
+    .icons i {
+        font-size: 35px;
+    }
+
+    .icons ul li {
+        padding: 0 27px;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .rightside {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2ch;
+        margin-left: 2ch;
+    }
+
+    .contactus {
+        width: 216px;
+        height: 216px;
+    }
+
+    .contactform {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 250px;
+        margin: 5%;
+        padding-bottom: 3%;
+        margin-bottom: 0;
+        margin-left: 3ch;
+    
+    }
+    
+.fb:hover {
+    cursor: pointer;
+    color: #1877f2;
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+
+.insta:hover {
+    cursor: pointer;
+    color: #c32aa3;
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+
+.wp:hover {
+    cursor: pointer;
+    color: #25d366;
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all ease 0.3s;
+
+}
+input[type=submit] {
+    background: linear-gradient(to right, rgba(32, 41, 119, 0.837), rgba(55, 46, 149, 0.87), rgba(83, 49, 177, 0.832), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    color: white;
+    width: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px 2px rgba(255, 254, 254, 0.737);
+    transition: all ease 0.3s;
+}
+footer p{
+    font-size: 15px;
+}
+}

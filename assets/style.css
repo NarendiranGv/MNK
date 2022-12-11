@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 2%;
+    background: transparent;
+}
+
+li,
+a,
+button {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: #FFF;
+
+}
+
+nav ul li a:hover {
+
+    color: rgb(62, 255, 104);
+    transition: all 0.3s ease 0s;
+
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    padding-left: 20px;
+
+}
+
+button {
+    padding: 10px 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #000;
+    color: #FFF;
+    transition: all 0.5s ease 0s;
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+/* content */
+
+.wrapper {
+    background: url(../assets/img/bgimage.png) no-repeat center / cover;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+
+}
+
+.wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to left, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 10%;
+    align-items: center;
+}
+
+.contentwriteup h1 {
+    color: #FFF;
+    font-weight: 500;
+    margin: 2%;
+    margin-left: auto;
+}
+
+.contentwriteup h4 {
+    color: rgba(67, 231, 22, 0.94);
+    font-weight: 600;
+    margin: 2%;
+}
+
+.contentwriteup p {
+    color: #FFF;
+    font-weight: 500;
+    margin: 4%;
+    margin-left: auto;
+}
+
+.bgimage1 {
+    border-radius: 4%;
+
+}
+
+
+figure .bgimage1 {
+    padding: 0%;
+    width: 600px;
+    height: 450px;
+    box-shadow: 0 0 15px 1px rgba(26, 25, 25, 0.837);
+    display: block;
+
+
+}
+
+figure :hover {
+    transform: scale(1.03);
+    z-index: 2;
+    opacity: 0.8;
+    transition: all ease 0.3s;
+}
+
+.MNKanimi {
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: all ease 0.3s;
+}
+
+/* about us */
+
+.aboutus h2 {
+    font-weight: 580;
+}
+
+.aboutus {
+    padding: 120px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.abtwrtup {
+    margin: 10%;
+}
+
+.aboutus p {
+    padding: 4%;
+
+}
+
+/* gallery content */
+hr {
+    padding: 2%;
+}
+
+.gh2 {
+    font-weight: 580;
+}
+
+.gallery {
+    width: 100%;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pics ul li {
+    display: inline-block;
+}
+
+.pics img {
+    cursor: pointer;
+    width: 250px;
+    margin: 15% 30px;
+    border-radius: 4%;
+    box-shadow: 0 0 15px 1px rgba(26, 25, 25, 0.837);
+
+}
+
+/* hover effect for img */
+
+.pics img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+
+body h2 span {
+    margin-left: 49%;
+}
+
+.project {
+    padding: 30px 10%;
+}
+
+.project h2 {
+    padding: 2% 0;
+    font-weight: 580;
+}
+
+.project p {
+    padding: 3%;
+}
+
+footer p {
+    padding-top: 2%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 350px;
+        margin: 0;
+    }
+
+    header .logo {
+        width: 100px;
+        padding: 0;
+        
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    header button {
+        padding: 6px 8px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 15px;
+        border: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 50px 20px;
+        }
+
+    .content figure .bgimage1{
+        position: relative;
+        width: 300px;
+        height: 225px;
+        margin-bottom: 2ch;
+    }
+
+    .content figure .bgimage1:hover {
+        transform: scale(1.03);
+        z-index: 2;
+        opacity: 0.8;
+        transition: all ease 0.3s;
+    }
+
+    .contentwriteup h1{
+        font-size:27px;
+    }
+
+    .contentwriteup h1 span{
+        font-size: 33px
+    }
+
+    .contentwriteup p{
+        font-size: 15px;
+    }
+    .motive{
+        font-size: 8px;
+    }
+
+    .aboutus{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .abtwrtup h2{
+        font-size: 27px;
+    }
+    
+    .abtwrtup p{
+        font-size: 15px;
+    }
+
+    .aboutus img{
+        width: 300px;
+        margin-bottom: 2ch;
+    }
+
+    .gh2{
+        margin-left: 38%;
+    }
+
+    .pics ul {
+        margin-left: 2ch;
+    }
+    .pics ul li{
+        padding: 0;
+        width: 150px;
+    }
+    .pics img {
+        
+        width: 125px;
+        margin: 15% 30px;
+        border-radius: 4%;
+        box-shadow: 0 0 15px 1px rgba(26, 25, 25, 0.837);
+    
+    }
+
+    .project h2{
+        font-size: 27px;
+    }
+
+    .project p{
+        font-size: 15px;
+    }
+}
